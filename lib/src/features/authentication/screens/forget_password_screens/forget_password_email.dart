@@ -35,6 +35,7 @@ class ForgetPasswordEmailScreen extends StatelessWidget {
               height: 20,
             ),
             TextFormFieldWidget(
+              roundedBorder: false,
               model: TextFormFieldModel(
                 hintText: "Email",
                 labelText: "Email",

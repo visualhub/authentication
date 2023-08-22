@@ -19,6 +19,7 @@ class LoginFormWidget extends StatelessWidget {
         child: Column(
           children: [
             TextFormFieldWidget(
+              roundedBorder: false,
               obscureText: false,
               model: TextFormFieldModel(
                 hintText: "Email",
@@ -31,12 +32,15 @@ class LoginFormWidget extends StatelessWidget {
               height: 10,
             ),
             TextFormFieldWidget(
+              roundedBorder: false,
               obscureText: true,
               model: TextFormFieldModel(
                 hintText: "Password",
                 keyboardType: TextInputType.text,
                 labelText: "Password",
-                suffixIcon: const Icon(Icons.remove_red_eye_outlined),
+                suffixIcon: IconButton(
+                    onPressed: () {},
+                    icon: const Icon(Icons.remove_red_eye_outlined)),
                 prefixIcon: const Icon(Icons.password_outlined),
               ),
             ),

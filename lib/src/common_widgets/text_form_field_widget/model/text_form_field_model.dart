@@ -9,6 +9,7 @@ class TextFormFieldModel {
     this.suffixIcon,
   });
   String? hintText, labelText;
-  Icon? prefixIcon, suffixIcon;
+  Icon? prefixIcon;
+  IconButton? suffixIcon;
   TextInputType? keyboardType;
 }

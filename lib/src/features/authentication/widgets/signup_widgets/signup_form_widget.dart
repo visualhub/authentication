@@ -16,6 +16,7 @@ class SignUpFormWidget extends StatelessWidget {
         child: Column(
           children: [
             TextFormFieldWidget(
+              roundedBorder: false,
               model: TextFormFieldModel(
                 prefixIcon: const Icon(Icons.person_outline_outlined),
                 hintText: "Full name",
@@ -28,6 +29,7 @@ class SignUpFormWidget extends StatelessWidget {
               height: 10,
             ),
             TextFormFieldWidget(
+              roundedBorder: false,
               model: TextFormFieldModel(
                 prefixIcon: const Icon(Icons.email_outlined),
                 hintText: "Your email",
@@ -40,6 +42,7 @@ class SignUpFormWidget extends StatelessWidget {
               height: 10,
             ),
             TextFormFieldWidget(
+              roundedBorder: false,
               model: TextFormFieldModel(
                 prefixIcon: const Icon(Icons.contact_phone_outlined),
                 hintText: "Your phone number",
@@ -52,6 +55,7 @@ class SignUpFormWidget extends StatelessWidget {
               height: 10,
             ),
             TextFormFieldWidget(
+              roundedBorder: false,
               model: TextFormFieldModel(
                 prefixIcon: const Icon(Icons.password_outlined),
                 hintText: "Password",
