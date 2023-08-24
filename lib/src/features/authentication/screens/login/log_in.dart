@@ -5,7 +5,7 @@ import 'package:auth/src/common_widgets/auth_widget/auth_footer_widget.dart';
 import 'package:auth/src/common_widgets/auth_widget/auth_header_widget.dart';
 import 'package:auth/src/constants/image_strings.dart';
 import 'package:auth/src/constants/text_strings.dart';
-import 'package:auth/src/features/user_dashboard/screens/user_dashboard.dart';
+import 'package:auth/src/features/dashboard/screens/dashboard.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -34,7 +34,7 @@ class LogInScreen extends StatelessWidget {
               LoginFormWidget(
                 onPressedLogin: () {
                   Get.to(
-                    () => const UserDashboard(),
+                    () => const Dashboard(),
                   );
                 },
                 onPressedForgetPassword: () {
